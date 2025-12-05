@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Portal</title>
+
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #0a0a0a;
+color: #ffffff;
+}
+
+header {
+background: #101010;
+padding: 20px;
+text-align: center;
+box-shadow: 0 0 12px #00eaff;
+}
+
+nav a {
+margin: 15px;
+color: #00eaff;
+font-size: 18px;
+text-decoration: none;
+transition: 0.3s;
+}
+nav a:hover {
+color: cyan;
+}
+
+.hero {
+text-align: center;
+padding: 80px 20px;
+}
+
+.hero h1 {
+font-size: 55px;
+margin: 0;
+}
+
+.hero p {
+font-size: 20px;
+margin-top: 15px;
+color: #bfbfbf;
+}
+
+.games {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+padding: 40px;
+}
+
+.card {
+background: #1a1a1a;
+width: 280px;
+padding: 20px;
+border-radius: 15px;
+text-align: center;
+box-shadow: 0 0 15px #00eaff50;
+transition: 0.3s;
+}
+
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0 0 20px #00eaff;
+}
+
+.card button {
+background: #00eaff;
+border: none;
+padding: 10px 20px;
+border-radius: 10px;
+font-size: 18px;
+margin-top: 15px;
+cursor: pointer;
+color: black;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.card button:hover {
+background: cyan;
+}
+
+footer {
+text-align: center;
+padding: 20px;
+background: #101010;
+margin-top: 40px;
+color: #777;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#">Home</a>
+<a href="#games">Games</a>
+<!-- No external links, no credits -->
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome to the Gaming Portal</h1>
+<p>Play fun and interactive browser games</p>
+</section>
+
+<section id="games" class="games">
+
+<div class="card">
+<h2>Tic Tac Toe</h2>
+<p>Click below to play the game.</p>
+<button onclick="window.open('#','_blank');">Play Now</button>
+</div>
+
+</section>
+
+<footer>
+<p>Medhansh</p>
+</footer>
+
+</body>
+</html>
